@@ -1,5 +1,14 @@
-import { FC } from 'react';
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material';
+import { FC, Dispatch, SetStateAction } from 'react';
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  PaletteMode,
+  Switch,
+} from '@mui/material';
 import {
   Group as GroupIcon,
   Home as HomeIcon,
@@ -12,7 +21,7 @@ import {
 } from '@mui/icons-material';
 
 interface Props {
-  setMode: React.Dispatch<React.SetStateAction<PaletteMode>>;
+  setMode: Dispatch<SetStateAction<PaletteMode>>;
 }
 
 export const Sidebar: FC<Props> = ({ setMode }) => {
